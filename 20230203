@@ -1,0 +1,82 @@
+# React-S.A
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- ㅎㅇ -->
+  </head>
+
+  <body>
+    <form class="form">
+      <div>
+        <label for="firstname">
+          First name : <br />
+          <input class="first" type="text" name="st_name" required
+        /></label>
+      </div>
+
+      <div>
+        <label for="lastname">
+          Last name : <br />
+          <input id="lastname" type="text" name="lastname"
+        /></label>
+      </div>
+
+      <div>
+        <label for="email">
+          email : <br />
+          <input id="email" type="text" name="email"
+        /></label>
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="남자" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="여자" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <label for="favorite"> favorite: </label>
+        <input type="checkbox" id="html" name="language" value="html" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="java" name="language" value="java" />
+        <label for="java">Java</label>
+
+        <input
+          type="checkbox"
+          id="javascript"
+          name="language"
+          value="javascript"
+        />
+        <label for="javascript">JavaScript</label>
+      </div>
+
+      <div>
+        <label for="browser"> Browser:</label>
+        <select name="browser">
+          <option value="chrome">Chrome</option>
+          <option value="edge">Edge</option>
+          <option value="opera">Opera</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="birthdaytime">Birthday:</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+      </div>
+
+      <input type="submit" value="제출" />
+    </form>
+    <script>
+      let form = document.querySelector(".form");
+
+      function printText() {
+        alert("제출완룡!!!!!!");
+      }
+
+      form.addEventListener("submit", printText);
+    </script>
+  </body>
+</html>
